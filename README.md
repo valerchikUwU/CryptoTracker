@@ -1,21 +1,14 @@
 # CryptoTracker
 
-The Crypto Tracker Android App is a mobile application that allows users to track the prices and market trends of various cryptocurrencies. This app is designed to provide a simple and intuitive interface for users to stay up-to-date with the latest market information.
+This is an Android app for tracking the latest prices of various cryptocurrencies. It fetches the data from the CoinMarketCap API and displays the currency name, symbol and price in a RecyclerView. The user can also filter the list by entering the name of a specific currency in the search bar.
 
 Features
 This application provides the following features:
 
 Track the prices and market trends of various cryptocurrencies in real-time.
-Monitor the top gainers and losers of the day in the cryptocurrency market.
 
-
-Architecture
-This application follows the Model-View-ViewModel (MVVM) architectural pattern, which separates the application into three interconnected parts:
-
-Models: Represent the data and the business logic of the application.
-Views: Display the user interface and interact with the user.
-ViewModels: Handle the user's requests, process the data, and return the response.
-In this application, the models represent the cryptocurrencies, their prices, and market trends. The views are implemented with XML and use the Material Design guidelines for styling. The viewmodels handle the user's requests, process the data, and interact with the models to provide the appropriate response.
+Usage
+Upon launching the app, it fetches the latest cryptocurrency data from the CoinMarketCap API and displays it in a RecyclerView. The user can then search for a specific currency by entering its name in the search bar. The app filters the list in real-time and displays only the currencies that match the search query.
 
 APIs
 This application uses the following APIs to retrieve the data:
